@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória do Sonic - Samyra Rodrigues de Andrade</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="./imgs/Icone.png">
+   
+</head>
+<body >
+
+    <div class="container">
+        <div id="tabuleiro" class="tabuleiro blurs" >
+            
+            <div class="interface">
+                <header>
+                    <h1 style="text-align: center;">JOGO DE ADIVINHAR DO SONIC</h1>
+                    <div class="intp1">
+                        <h3 id="player1Name">Jogador 1</h3>
+                        <h3 id="player2Name">Jogador 2</h3>
+                    </div>
+                    <div class="intp2">
+                        <h3 class="pontosp1"><span id="pontos">Pontos:</span></h3>
+                        <h3 class="pontosp2"><span id="pontos2">Pontos:</span></h3>
+                    </div>
+                </header>
+                <section>
+                <div class="grid">
+                    <!--Cartas criadas pela função javascript criarCarta()-->
+                </div>
+          
+                <div class="containerCarta" id="containerCartaFixa">
+                    <div id="primeiraCarta" class="carta revelar-card cartafixa">
+                    
+                    </div>
+                </div>
+                </section>
+                <section>
+                <div class="Caixaregras desabilitar">
+                    <button class="regras" >REGRAS</button>
+
+                <div class="textregras">
+                    <h2 style="text-align: center; ">REGRAS</h2>
+
+                    <br>
+                    <p>
+                        Nesse jogo temos 5 cartas viradas para baixo e 1 carta virada para cima, você deverá encontrar a carta entre as 5 que faça par com a carta a mostra.
+                    </p>
+                    <br>
+                    <p>
+                        Cada jogador terá 3 chances.
+                    </p>
+                    <br>
+                    <p>   
+                        Caso acerte na primeira tentativa 3 pontos<br>
+                        Caso acerte na segunda tentativa 2 pontos<br>
+                        Caso acerte na terceira tentativa 1 ponto
+                    </p> 
+                    <br>
+                    <p>   
+                        Caso não acerte a as cartas são embaralhadas e será a veaz do outro jogador
+                    </p>
+                </div>
+                
+
+                </div>
+                </section>
+                
+            </div>
+
+            
+            <footer style="background-color: rgb(1, 45, 70); color: #fff; padding: 2%;"><h2 style="text-align: center;">Bacharelado Design 2º Semestre</h2></footer>
+        </div>
+    <div class="container" >
+        <div id="popup" class="popup">
+           <div class="board" >
+            <h2>BEM-VINDO</h2>
+            <div class="Player1Register">
+                
+            
+                <h3>Jogador 1</h3>
+                <input class="inputStyle" id="player1" type="text" placeholder="Insira seu apelido" required>
+            </div>
+            <div class="Player2Register">
+                <h3>Jogador 2</h3>
+                <input class="inputStyle" id="player2" type="text" placeholder="Insira seu apelido" required>
+            </div>
+
+            <button class="btnStart" onclick="startGame()" style="margin-top: 15%; padding: 15px 35px; color: #fff; cursor: pointer; border-radius: 5%; border: none;">JOGAR</button>
+
+          
+          </div>
+
+        </div>
+    </div>
+
+    <div class="container" >
+        <div id="popup2" class="popup esconder">
+
+           <div class="boardWin" >
+            <h1>PARABÉNS!</h1>
+            <div id="playerWin">
+           
+            </div>
+
+
+            <a href="index.html" class="btnStart"  style="margin-top: 15%; padding: 15px 35px; color: #fff; cursor: pointer; border-radius: 5%; border: none;">JOGAR NOVAMENTE</a>
+           </div>
+
+          
+        </div>
+        
+    </div>
+    
+    </div>
+
+
+    <script src="JavaScript/jogo.js"></script>
+    <script src="JavaScript/login.js"></script>
+</body>
+
+
+</html>
